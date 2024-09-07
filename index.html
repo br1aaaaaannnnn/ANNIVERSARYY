@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+<title>Happy Anniversary</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <button class="audio-button" id="playPauseButton">
+        <i>P</i>
+        <i>l</i>
+        <i>a</i>
+        <i>y</i>
+        <i>use</i>
+      </button>
+      <audio id="audioElement">
+        <source src="Lagu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <div class="title">Happy Anniversary</div>
+
+    <div class="nessage">
+        <p>Happy Anniversary pertama kita ya sayang</p>
+        <p>Aku udah kepikiran bikin ini dari lama si, makanya aku belajar koding berusaha dari kemarin, terus jg ada tiktok yang bs dipake buat belajar jadi yaudah sekalian aja gitu</p>
+        <p>Harapanku di anniv kita ini, semoga kita bisa makin saling ngerti satu sama lain, communication is not always the key,but the understanding is.</p>
+        <p>Makasi banget udah nemenin aku dari dulu belum belajar apa apa soal hubungan sampe dititik ini, yang bisa aku mastiin ke kamu, kamu built aku buat kamu, not for anyone else</p>
+        <p>Loveuuuuu!!!!!</p>
+    
+    </div>
+    <div class="message-2">
+        <p class="">Kamu sayang aku terus yaaaa lovv</p>
+    </div>
+    <div class="button-row">
+        <a href="VIDEO.mp4" class="next-button">Iyaaaa sayangggg</a>
+        <a href="No.jpeg" class="no-button">JANGAN NOLAAAKKK AAAAA</a>
+    </div>
+
+</body>
+<script>document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('playPauseButton');
+    const audio = document.getElementById('audioElement');
+    button.addEventListener('click', function() {
+      if (audio.paused) {
+        audio.play();
+        button.classList.add('playing');
+        button.classList.remove('paused');
+      } else {
+        audio.pause();
+        button.classList.add('paused');
+        button.classList.remove('playing');
+      }
+    });
+  });
+  </script>
+</html>
